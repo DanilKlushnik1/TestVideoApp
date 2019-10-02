@@ -2,7 +2,6 @@ import React from 'react';
 import { StyleSheet, View, Dimensions } from 'react-native';
 
 import Video from 'react-native-video';
-import BottomList from '../../components/Bottom/Bottoms';
 
 const { width } = Dimensions.get("window")
 
@@ -13,14 +12,10 @@ export const VideoPage1 = () => {
             <View >
               <Video
                 style = {{width, height: 300}}
-                repeat
                 source={require('./Video/Video1.mp4')}
-                onAudioBecomingNoisy
                 controls = {true}
                 paused
                 resizeMode = "cover"
-                playWhenInactive
-                fullscreen
                 />
             </View>
         </View>
@@ -34,13 +29,10 @@ export const VideoPage2 = () => {
           <View >
             <Video
               style = {{width, height: 300}}
-              repeat
               source={require('./Video/Video2.mp4')}
-              onAudioBecomingNoisy
               controls = {true}
               paused
-              resizeMode = "cover"
-              playWhenInactive/>
+              resizeMode = "cover"/>
           </View>
       </View>
   )
@@ -53,13 +45,10 @@ export const VideoPage3 = () => {
           <View >
             <Video
               style = {{width, height: 300}}
-              repeat
               source={require('./Video/Video3.mp4')}
-              onAudioBecomingNoisy
               controls = {true}
               paused
-              resizeMode = "cover"
-              playWhenInactive/>
+              resizeMode = "cover"/>
           </View>
       </View>
   )
@@ -72,13 +61,10 @@ export const VideoPage4 = () => {
           <View >
             <Video
               style = {{width, height: 300}}
-              repeat
               source={require('./Video/Video4.mp4')}
-              onAudioBecomingNoisy
               controls = {true}
               paused
-              resizeMode = "cover"
-              playWhenInactive/>
+              resizeMode = "cover"/>
           </View>
       </View>
   )
@@ -86,6 +72,7 @@ export const VideoPage4 = () => {
 
 var styles = StyleSheet.create({
     backgroundVideo: {
+      backgroundColor: "black",
       width: "auto",
       height: 300,
       position: 'absolute',
@@ -97,7 +84,6 @@ var styles = StyleSheet.create({
     },
     fakeContent: {
       height: 850,
-      backgroundColor: "#CCC",
       padding: 250,
       alignItems: "center"
     }

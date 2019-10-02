@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, StyleSheet, Button} from 'react-native';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { Actions } from 'react-native-router-flux'
 
 const BottomList = () => {
@@ -32,10 +31,6 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         flexDirection: 'row',
         justifyContent: 'space-between'
-        // position: "relative",
-        // left: 0,
-        // bottom: 0,
-        // width: '100%',
     },
     BottomListText: {
         textAlign: 'center',
